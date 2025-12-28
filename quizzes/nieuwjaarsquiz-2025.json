@@ -64,7 +64,7 @@
 
     { "question": "Welke K-pop groep kondigde een comeback aan in 2025?", "answers": ["BTS", "Blackpink", "Stray Kids", "NewJeans"], "correct": 0, "category": "tieners" },
 
-    { "question": "Wat werd het woord van het jaar 2024 volgens Van Dale?", "answers": ["Klimaatklever", "Doorgeslagen", "Bubbel", "Aso-vlogger"], "correct": 1, "category": "fun" },
+    { "question": "Wat werd het woord van het jaar 2025 volgens Van Dale?", "answers": ["Polarisatie", "Hallucineren", "Graaiflatie", "Doomscrolling"], "correct": 1, "category": "fun" },
 
     { "question": "Welke Nederlandse schrijver won de Libris Literatuurprijs 2025?", "answers": ["Tommy Wieringa", "Marieke Lucas Rijneveld", "Hanna Bervoets", "Herman Koch"], "correct": 2, "category": "cultuur" },
 
