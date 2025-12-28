@@ -637,17 +637,17 @@
                 .on('postgres_changes',
                     { event: 'UPDATE', schema: 'public', table: 'game_sessions', filter: `id=eq.${gameState.sessionId}` },
                     async (payload) => {
+                        console.log('Game update:', payload.new);
                         const session = payload.new;
 
                         if (session.status === 'playing') {
-                            if (session.current_question !== gameState.currentQuestion) {
-                                gameState.currentQuestion = session.current_question;
-                                const q = questions[gameState.currentQuestion];
-                                document.getElementById('player-question-hint').textContent = q.type === 'music' ? '♪ Luister en kies!' : 'Kies je antwoord!';
-                                document.getElementById('audio-viz').style.display = q.type === 'music' ? 'flex' : 'none';
-                                enableAnswerButtons();
-                                showScreen('player-question');
-                            }
+                            // Altijd naar vraagscherm bij status 'playing'
+                            gameState.currentQuestion = session.current_question;
+                            const q = questions[gameState.currentQuestion];
+                            document.getElementById('player-question-hint').textContent = q.type === 'music' ? '♪ Luister en kies!' : 'Kies je antwoord!';
+                            document.getElementById('audio-viz').style.display = q.type === 'music' ? 'flex' : 'none';
+                            enableAnswerButtons();
+                            showScreen('player-question');
                         } else if (session.status === 'finished') {
                             await showPlayerFinalScore();
                         }
