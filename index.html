@@ -212,8 +212,7 @@
                 <div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div>
                 <div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div>
             </div>
-            <div id="music-player-container" style="margin-bottom: 20px;"></div>
-            <div id="music-info" style="background: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 15px; margin-bottom: 30px;"></div>
+            <div id="music-player-container" style="margin-bottom: 30px;"></div>
             <div style="display: flex; gap: 15px; justify-content: center;">
                 <button class="btn btn-primary" onclick="showMusicQuestion()">Toon de vraag!</button>
                 <button class="btn btn-secondary" onclick="showWelcome()">✕ Annuleren</button>
@@ -507,10 +506,6 @@
                 } else {
                     playerContainer.innerHTML = `<p style="color: var(--orange);">⚠️ Geen audiobestand gevonden - gebruik Apple Music/Spotify</p>`;
                 }
-
-                // Verberg de music-info (bevat het antwoord!)
-                const musicInfo = document.getElementById('music-info');
-                musicInfo.innerHTML = '';
 
                 showScreen('host-music-listen');
                 return; // Wacht tot host op "Toon de vraag" klikt
