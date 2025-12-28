@@ -44,11 +44,11 @@
 
     { "question": "Dansen of verboden? Deze populaire app ging in de VS bijna op zwart in 2025. Welke?", "answers": ["Instagram", "TikTok", "Snapchat", "BeReal"], "correct": 1, "category": "tieners" },
 
-    { "question": "Ciao Italia! Welke Oranjetelg studeerde in 2025 af aan een school onder de Toscaanse zon?", "answers": ["Amalia", "Alexia", "Ariane", "Beatrix"], "correct": 2, "category": "nederland" },
+    { "question": "Ciao Italia! Welke Oranjetelg studeerde in 2025 af aan een internationale school in Italië?", "answers": ["Amalia", "Alexia", "Ariane", "Beatrix"], "correct": 2, "category": "nederland" },
 
     { "question": "Snap snap! De gothic tiener is terug voor seizoen 2. Op welke streamingdienst verscheen Wednesday in 2025?", "answers": ["Disney+", "Netflix", "Amazon Prime", "HBO Max"], "correct": 1, "category": "tieners" },
 
-    { "question": "Nemo nam de prijs mee naar huis: welk land won het Eurovisie Songfestival 2024 met 'The Code'?", "answers": ["Nederland", "Zwitserland", "Kroatië", "Israël"], "correct": 1, "category": "entertainment" },
+    { "question": "Nemo brak de trofee en maakte geschiedenis als non-binaire winnaar. Welk land vertegenwoordigde Nemo op Eurovision?", "answers": ["Nederland", "Zwitserland", "Kroatië", "Israël"], "correct": 1, "category": "entertainment" },
 
     { "question": "Iceman vloog voor het laatst: welke 'Top Gun'-acteur overleed op 1 april 2025?", "answers": ["Tom Cruise", "Val Kilmer", "Michael Douglas", "Kevin Bacon"], "correct": 1, "category": "entertainment" },
 
@@ -92,7 +92,7 @@
 
     { "question": "Robotaxi's komen eraan! Welk techbedrijf kondigt in 2025 zelfrijdende taxi's aan voor Londen?", "answers": ["Tesla", "Waymo", "Uber", "Mobileye"], "correct": 1, "category": "technologie" },
 
-    { "question": "Lachen om middernacht: welke Nederlandse comedian gaf de Oudejaarsconference 2024?", "answers": ["Youp van 't Hek", "Claudia de Breij", "Martijn Koning", "Peter Pannekoek"], "correct": 2, "category": "entertainment" },
+    { "question": "Lachen om middernacht: welke Nederlandse comedian gaf de Oudejaarsconference 2024?", "answers": ["Youp van 't Hek", "Pieter Derks", "Martijn Koning", "Peter Pannekoek"], "correct": 1, "category": "entertainment" },
 
     { "question": "Het oudste muziekfestival van Nederland - welk festival bestaat in 2025 het langst?", "answers": ["Pinkpop (sinds 1970)", "Lowlands (sinds 1993)", "North Sea Jazz (sinds 1976)", "Parkpop (sinds 1981)"], "correct": 0, "category": "cultuur" },
 
