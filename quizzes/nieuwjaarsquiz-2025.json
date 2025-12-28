@@ -94,7 +94,7 @@
 
     { "question": "Lachen om middernacht: welke Nederlandse comedian gaf de Oudejaarsconference 2024?", "answers": ["Youp van 't Hek", "Pieter Derks", "Martijn Koning", "Peter Pannekoek"], "correct": 1, "category": "entertainment" },
 
-    { "question": "Het oudste muziekfestival van Nederland - welk festival bestaat in 2025 het langst?", "answers": ["Pinkpop (sinds 1970)", "Lowlands (sinds 1993)", "North Sea Jazz (sinds 1976)", "Parkpop (sinds 1981)"], "correct": 0, "category": "cultuur" },
+    { "question": "Het oudste muziekfestival van Nederland - welk festival bestaat in 2025 het langst?", "answers": ["Pinkpop", "Lowlands", "North Sea Jazz", "Parkpop"], "correct": 0, "category": "cultuur" },
 
     { "question": "Culturele eer? Werd er in 2025 een Nederlandse stad uitgeroepen tot Europese Culturele Hoofdstad?", "answers": ["Rotterdam", "Utrecht", "Eindhoven", "Geen Nederlandse stad"], "correct": 3, "category": "cultuur" },
 
