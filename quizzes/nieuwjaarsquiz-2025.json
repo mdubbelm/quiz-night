@@ -3,30 +3,89 @@
   "title": "Nieuwjaarsquiz 2025",
   "description": "Test je kennis over 2025!",
   "questions": [
-    { "question": "Welke politieke partij stapte in juni 2025 uit de coalitie, waardoor kabinet-Schoof viel?", "answers": ["VVD", "PVV", "NSC", "BBB"], "correct": 1 },
-    { "question": "In welke stad was de eerste NAVO-top ooit in Nederland (juni 2025)?", "answers": ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht"], "correct": 2 },
-    { "question": "Welk nummer hoor je?", "answers": ["APT. - ROSE & Bruno Mars", "Die With A Smile - Lady Gaga & Bruno Mars", "Espresso - Sabrina Carpenter", "Birds of a Feather - Billie Eilish"], "correct": 1, "type": "music", "audioFile": "audio/01-die-with-a-smile.m4a" },
-    { "question": "Wie was in 2025 secretaris-generaal van de NAVO?", "answers": ["Jens Stoltenberg", "Mark Rutte", "Dick Schoof", "Ursula von der Leyen"], "correct": 1 },
-    { "question": "Hoeveel mensen liepen mee bij de grootste 'Rode Lijn' demonstratie (oktober 2025)?", "answers": ["50.000", "100.000", "150.000", "250.000"], "correct": 3 },
-    { "question": "Welk nummer hoor je?", "answers": ["Die With A Smile", "Ordinary - Alex Warren", "APT. - ROSE & Bruno Mars", "Echte Liefde Is Te Koop"], "correct": 2, "type": "music", "audioFile": "audio/02-apt.m4a" },
-    { "question": "Welke Nederlandse korte film won in 2025 een Oscar?", "answers": ["De Oost", "Ik Ben Geen Robot", "Babygirl", "Haantjes"], "correct": 1 },
-    { "question": "Op welke datum waren de Tweede Kamerverkiezingen in 2025?", "answers": ["15 september", "1 oktober", "29 oktober", "15 november"], "correct": 2 },
-    { "question": "Welk nummer hoor je?", "answers": ["Lunch - Billie Eilish", "Birds of a Feather - Billie Eilish", "Please Please Please - Sabrina Carpenter", "Good Luck, Babe! - Chappell Roan"], "correct": 1, "type": "music", "audioFile": "audio/03-lunch.m4a" },
-    { "question": "Welke partij werd samen met PVV de grootste (beiden 26 zetels)?", "answers": ["VVD", "GroenLinks-PvdA", "D66", "CDA"], "correct": 1 },
-    { "question": "Welk muziekspel veroverde in 2025 de huiskamers?", "answers": ["30 Seconds", "Hitster", "Stef Stuntpiloot", "SongPop"], "correct": 1 },
-    { "question": "Welk nummer hoor je?", "answers": ["Espresso - Sabrina Carpenter", "Taste - Sabrina Carpenter", "Please Please Please", "Feather - Sabrina Carpenter"], "correct": 0, "type": "music", "audioFile": "audio/04-espresso.m4a" },
-    { "question": "Welk programma won de Gouden Televizier-Ring 2025?", "answers": ["Haantjes", "Voetbal Ouders", "Vandaag Inside", "Jinek"], "correct": 2 },
-    { "question": "Hoeveel jaar bestond Amsterdam in 2025?", "answers": ["700 jaar", "725 jaar", "750 jaar", "800 jaar"], "correct": 2 },
-    { "question": "Welk nummer hoor je?", "answers": ["HOT TO GO! - Chappell Roan", "Red Wine Supernova", "Good Luck, Babe! - Chappell Roan", "Pink Pony Club"], "correct": 2, "type": "music", "audioFile": "audio/05-good-luck-babe.m4a" },
-    { "question": "Welke natuurramp trof Los Angeles begin januari 2025?", "answers": ["Aardbeving", "Orkaan", "Natuurbranden", "Overstroming"], "correct": 2 },
-    { "question": "Hoe heet de defensienorm afgesproken tijdens de NAVO-top?", "answers": ["The Amsterdam Promise", "The Hague Pledge", "The Rotterdam Accord", "The Dutch Deal"], "correct": 1 },
-    { "question": "Wie werd in 2025 topscoorder aller tijden van Oranje?", "answers": ["Robin van Persie", "Memphis Depay", "Virgil van Dijk", "Cody Gakpo"], "correct": 1 },
-    { "question": "Wat werd gestolen uit het Drents Museum in januari 2025?", "answers": ["Romeinse munten", "Vikingsieraden", "Egyptische artefacten", "Dacische goudschatten"], "correct": 3 },
-    { "question": "Welke toren stortte in maart 2025 in Valkenburg?", "answers": ["Watertoren", "Wilhelminatoren", "Kerktoren", "Uitzichttoren"], "correct": 1 },
-    { "question": "Welke Golden Earring-gitarist overleed in 2025 aan ALS?", "answers": ["Barry Hay", "George Kooymans", "Rinus Gerritsen", "Cesar Zuiderwijk"], "correct": 1 },
-    { "question": "Welke Nederlandse zanger, bekend van 'Banger Hart', overleed in maart 2025 aan Parkinson?", "answers": ["Gerard Cox", "Rob de Nijs", "Lee Towers", "Gordon"], "correct": 1 },
-    { "question": "Welke Oscar-winnende acteur van 'The French Connection' werd in 2025 dood aangetroffen in Santa Fe?", "answers": ["Robert Redford", "Gene Hackman", "Val Kilmer", "Richard Chamberlain"], "correct": 1 },
-    { "question": "Welke Nederlandse cabaretier en acteur, bekend van 't Is Weer Voorbij Die Mooie Zomer', overleed in 2025?", "answers": ["Paul de Leeuw", "Gerard Cox", "André van Duin", "Youp van 't Hek"], "correct": 1 },
-    { "question": "Welke 'Top Gun' en 'The Doors' acteur overleed op 1 april 2025?", "answers": ["Tom Cruise", "Val Kilmer", "Michael Douglas", "Kevin Bacon"], "correct": 1 }
+
+    { "question": "Welke politieke partij stapte in juni 2025 uit de coalitie, waardoor kabinet-Schoof viel?", "answers": ["VVD", "PVV", "NSC", "BBB"], "correct": 1, "category": "politiek" },
+
+    { "question": "In welke stad was de eerste NAVO-top ooit in Nederland (juni 2025)?", "answers": ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht"], "correct": 2, "category": "politiek" },
+
+    { "question": "Welk nummer hoor je?", "answers": ["APT. - ROSE & Bruno Mars", "Die With A Smile - Lady Gaga & Bruno Mars", "Espresso - Sabrina Carpenter", "Birds of a Feather - Billie Eilish"], "correct": 1, "type": "music", "audioFile": "audio/01-die-with-a-smile.m4a", "category": "muziek" },
+
+    { "question": "Wie was in 2025 secretaris-generaal van de NAVO?", "answers": ["Jens Stoltenberg", "Mark Rutte", "Dick Schoof", "Ursula von der Leyen"], "correct": 1, "category": "politiek" },
+
+    { "question": "Welk nummer hoor je?", "answers": ["Die With A Smile", "Ordinary - Alex Warren", "APT. - ROSE & Bruno Mars", "Echte Liefde Is Te Koop"], "correct": 2, "type": "music", "audioFile": "audio/02-apt.m4a", "category": "muziek" },
+
+    { "question": "Welke Nederlandse korte film won in 2025 een Oscar?", "answers": ["De Oost", "Ik Ben Geen Robot", "Babygirl", "Haantjes"], "correct": 1, "category": "entertainment" },
+
+    { "question": "Welk nummer hoor je?", "answers": ["Lunch - Billie Eilish", "Birds of a Feather - Billie Eilish", "Please Please Please - Sabrina Carpenter", "Good Luck, Babe! - Chappell Roan"], "correct": 1, "type": "music", "audioFile": "audio/03-lunch.m4a", "category": "muziek" },
+
+    { "question": "Welk muziekspel veroverde in 2025 de huiskamers?", "answers": ["30 Seconds", "Hitster", "Stef Stuntpiloot", "SongPop"], "correct": 1, "category": "entertainment" },
+
+    { "question": "Welk nummer hoor je?", "answers": ["Espresso - Sabrina Carpenter", "Taste - Sabrina Carpenter", "Please Please Please", "Feather - Sabrina Carpenter"], "correct": 0, "type": "music", "audioFile": "audio/04-espresso.m4a", "category": "muziek" },
+
+    { "question": "Welk programma won de Gouden Televizier-Ring 2025?", "answers": ["Haantjes", "Voetbal Ouders", "Vandaag Inside", "Jinek"], "correct": 2, "category": "entertainment" },
+
+    { "question": "Hoeveel jaar bestond Amsterdam in 2025?", "answers": ["700 jaar", "725 jaar", "750 jaar", "800 jaar"], "correct": 2, "category": "nederland" },
+
+    { "question": "Welk nummer hoor je?", "answers": ["HOT TO GO! - Chappell Roan", "Red Wine Supernova", "Good Luck, Babe! - Chappell Roan", "Pink Pony Club"], "correct": 2, "type": "music", "audioFile": "audio/05-good-luck-babe.m4a", "category": "muziek" },
+
+    { "question": "Welke natuurramp trof Los Angeles begin januari 2025?", "answers": ["Aardbeving", "Orkaan", "Natuurbranden", "Overstroming"], "correct": 2, "category": "wereld" },
+
+    { "question": "Welke Golden Earring-gitarist overleed in 2025 aan ALS?", "answers": ["Barry Hay", "George Kooymans", "Rinus Gerritsen", "Cesar Zuiderwijk"], "correct": 1, "category": "muziek" },
+
+    { "question": "Welke Nederlandse zanger, bekend van 'Banger Hart', overleed in maart 2025?", "answers": ["Gerard Cox", "Rob de Nijs", "Lee Towers", "Gordon"], "correct": 1, "category": "muziek" },
+
+    { "question": "Welke film won de Oscar voor Beste Film in 2025?", "answers": ["Oppenheimer", "Anora", "The Brutalist", "Emilia Pérez"], "correct": 1, "category": "entertainment" },
+
+    { "question": "Welke YouTuber/streamer was in 2025 de grootste van Nederland?", "answers": ["Enzo Knol", "Dylan Haegens", "Nikkie de Jager", "MrBeast"], "correct": 1, "category": "tieners" },
+
+    { "question": "Welk spel won Game of the Year 2024 (uitgereikt in 2025)?", "answers": ["Elden Ring DLC", "Astro Bot", "Final Fantasy VII Rebirth", "Metaphor: ReFantazio"], "correct": 1, "category": "tieners" },
+
+    { "question": "Hoeveel wereldtitels Formule 1 heeft Max Verstappen na 2024?", "answers": ["2", "3", "4", "5"], "correct": 2, "category": "sport" },
+
+    { "question": "Welke Nederlandse club werd landskampioen voetbal 2024-2025?", "answers": ["Ajax", "PSV", "Feyenoord", "AZ"], "correct": 1, "category": "sport" },
+
+    { "question": "Welke app werd in 2025 tijdelijk verboden in de VS?", "answers": ["Instagram", "TikTok", "Snapchat", "BeReal"], "correct": 1, "category": "tieners" },
+
+    { "question": "Wie werd in januari 2025 opnieuw president van de Verenigde Staten?", "answers": ["Joe Biden", "Donald Trump", "Kamala Harris", "Ron DeSantis"], "correct": 1, "category": "wereld" },
+
+    { "question": "Welke Nederlandse prinses ging in 2025 studeren?", "answers": ["Amalia", "Alexia", "Ariane", "Beatrix"], "correct": 1, "category": "nederland" },
+
+    { "question": "Welke streamingdienst bracht in 2025 de serie 'Wednesday' seizoen 2 uit?", "answers": ["Disney+", "Netflix", "Amazon Prime", "HBO Max"], "correct": 1, "category": "tieners" },
+
+    { "question": "Welk Eurovisie Songfestival-land won in 2024 (gevierd in 2025)?", "answers": ["Nederland", "Zwitserland", "Kroatië", "Israël"], "correct": 1, "category": "entertainment" },
+
+    { "question": "Welke 'Top Gun' acteur overleed op 1 april 2025?", "answers": ["Tom Cruise", "Val Kilmer", "Michael Douglas", "Kevin Bacon"], "correct": 1, "category": "entertainment" },
+
+    { "question": "Hoeveel gram weegt een standaard Tony Chocolonely reep?", "answers": ["100 gram", "150 gram", "180 gram", "200 gram"], "correct": 2, "category": "fun" },
+
+    { "question": "Welke Nederlandse stad kreeg in 2025 een eigen versie van Monopoly?", "answers": ["Rotterdam", "Utrecht", "Eindhoven", "Groningen"], "correct": 2, "category": "fun" },
+
+    { "question": "Welke dierentuin vierde in 2025 zijn 100-jarig bestaan?", "answers": ["Artis", "Blijdorp", "Burgers' Zoo", "Ouwehands"], "correct": 2, "category": "nederland" },
+
+    { "question": "Welke K-pop groep kondigde een comeback aan in 2025?", "answers": ["BTS", "Blackpink", "Stray Kids", "NewJeans"], "correct": 0, "category": "tieners" },
+
+    { "question": "Wat werd het woord van het jaar 2024 volgens Van Dale?", "answers": ["Klimaatklever", "Doorgeslagen", "Bubbel", "Aso-vlogger"], "correct": 1, "category": "fun" },
+
+    { "question": "Welke Nederlandse schrijver won de Libris Literatuurprijs 2025?", "answers": ["Tommy Wieringa", "Marieke Lucas Rijneveld", "Hanna Bervoets", "Herman Koch"], "correct": 2, "category": "cultuur" },
+
+    { "question": "Op welk eiland vond de NAVO-top plaats?", "answers": ["Texel", "Schiermonnikoog", "Marken", "Pampus"], "correct": 2, "category": "politiek" },
+
+    { "question": "Welke Nederlandse influencer opende een eigen restaurant in 2025?", "answers": ["Enzo Knol", "Monica Geuze", "Anna Nooshin", "Mascha Feoktistova"], "correct": 2, "category": "tieners" },
+
+    { "question": "Hoeveel mensen liepen mee bij de grootste 'Rode Lijn' klimaatdemonstratie?", "answers": ["50.000", "100.000", "150.000", "250.000"], "correct": 3, "category": "nederland" },
+
+    { "question": "Welke AI-tool werd in 2025 het meest gebruikt door scholieren?", "answers": ["ChatGPT", "Claude", "Gemini", "Copilot"], "correct": 0, "category": "tieners" },
+
+    { "question": "Wat was de gemiddelde temperatuur in Nederland in de zomer van 2025?", "answers": ["Koudste ooit", "Normaal", "Warmste ooit", "Op één na warmste"], "correct": 2, "category": "nederland" },
+
+    { "question": "Welke emoji werd het meest gebruikt in 2025?", "answers": ["😂", "❤️", "🥹", "💀"], "correct": 2, "category": "fun" },
+
+    { "question": "Welk merk bracht de duurste sneakers van 2025 uit?", "answers": ["Nike", "Adidas", "Louis Vuitton", "Balenciaga"], "correct": 2, "category": "tieners" },
+
+    { "question": "In welk jaar is de Euro ingevoerd in Nederland?", "answers": ["1999", "2000", "2001", "2002"], "correct": 3, "category": "nostalgie" },
+
+    { "question": "Welke klassieke Nederlandse film werd opnieuw uitgebracht in 4K?", "answers": ["Turks Fruit", "Flodder", "Soldaat van Oranje", "De Lift"], "correct": 2, "category": "nostalgie" },
+
+    { "question": "Wat werd gestolen uit het Drents Museum in januari 2025?", "answers": ["Romeinse munten", "Vikingsieraden", "Egyptische artefacten", "Dacische goudschatten"], "correct": 3, "category": "nederland" }
   ]
 }
