@@ -287,8 +287,22 @@
             { question: "Hoe heet de defensienorm afgesproken tijdens de NAVO-top?", answers: ["The Amsterdam Promise", "The Hague Pledge", "The Rotterdam Accord", "The Dutch Deal"], correct: 1 },
             { question: "Wie werd in 2025 topscoorder aller tijden van Oranje?", answers: ["Robin van Persie", "Memphis Depay", "Virgil van Dijk", "Cody Gakpo"], correct: 1 },
             { question: "Wat werd gestolen uit het Drents Museum in januari 2025?", answers: ["Romeinse munten", "Vikingsieraden", "Egyptische artefacten", "Dacische goudschatten"], correct: 3 },
-            { question: "Welke toren stortte in maart 2025 in Valkenburg?", answers: ["Watertoren", "Wilhelminatoren", "Kerktoren", "Uitzichttoren"], correct: 1 }
+            { question: "Welke toren stortte in maart 2025 in Valkenburg?", answers: ["Watertoren", "Wilhelminatoren", "Kerktoren", "Uitzichttoren"], correct: 1 },
+            // Overleden beroemdheden 2025
+            { question: "Welke Golden Earring-gitarist overleed in 2025 aan ALS?", answers: ["Barry Hay", "George Kooymans", "Rinus Gerritsen", "Cesar Zuiderwijk"], correct: 1 },
+            { question: "Welke Nederlandse zanger, bekend van 'Banger Hart', overleed in maart 2025 aan Parkinson?", answers: ["Gerard Cox", "Rob de Nijs", "Lee Towers", "Gordon"], correct: 1 },
+            { question: "Welke Oscar-winnende acteur van 'The French Connection' werd in 2025 dood aangetroffen in Santa Fe?", answers: ["Robert Redford", "Gene Hackman", "Val Kilmer", "Richard Chamberlain"], correct: 1 },
+            { question: "Welke Nederlandse cabaretier en acteur, bekend van 't Is Weer Voorbij Die Mooie Zomer', overleed in 2025?", answers: ["Paul de Leeuw", "Gerard Cox", "André van Duin", "Youp van 't Hek"], correct: 1 },
+            { question: "Welke 'Top Gun' en 'The Doors' acteur overleed op 1 april 2025?", answers: ["Tom Cruise", "Val Kilmer", "Michael Douglas", "Kevin Bacon"], correct: 1 }
         ];
+
+        // Shuffle vragen bij start van elk spel
+        function shuffleQuestions() {
+            for (let i = questions.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [questions[i], questions[j]] = [questions[j], questions[i]];
+            }
+        }
 
         
         function generateGameCode() {
@@ -384,6 +398,9 @@
         }
 
         async function startGame() {
+            // Shuffle vragen voor elk nieuw spel
+            shuffleQuestions();
+
             // Update session status
             await db
                 .from('game_sessions')
