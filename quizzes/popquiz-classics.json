@@ -1,0 +1,17 @@
+{
+  "id": "popquiz-classics",
+  "title": "Popquiz Classics",
+  "description": "Herken de hits uit de jaren 80, 90 en 00!",
+  "questions": [
+    { "question": "Welke artiest had een hit met 'Billie Jean'?", "answers": ["Prince", "Michael Jackson", "Whitney Houston", "Madonna"], "correct": 1 },
+    { "question": "Uit welk jaar komt 'Bohemian Rhapsody' van Queen?", "answers": ["1973", "1975", "1977", "1979"], "correct": 1 },
+    { "question": "Welke band zong 'Wonderwall'?", "answers": ["Blur", "Oasis", "Radiohead", "Coldplay"], "correct": 1 },
+    { "question": "Hoeveel leden had de Spice Girls?", "answers": ["4", "5", "6", "7"], "correct": 1 },
+    { "question": "Welke Nederlandse band scoorde met 'Radar Love'?", "answers": ["Doe Maar", "Golden Earring", "BZN", "Normaal"], "correct": 1 },
+    { "question": "Wie zong 'I Will Always Love You' in The Bodyguard?", "answers": ["Mariah Carey", "Celine Dion", "Whitney Houston", "Diana Ross"], "correct": 2 },
+    { "question": "Welke artiest bracht 'Purple Rain' uit?", "answers": ["Michael Jackson", "David Bowie", "Prince", "George Michael"], "correct": 2 },
+    { "question": "Uit welk land komt ABBA?", "answers": ["Noorwegen", "Denemarken", "Finland", "Zweden"], "correct": 3 },
+    { "question": "Welke band zong 'Smells Like Teen Spirit'?", "answers": ["Pearl Jam", "Nirvana", "Soundgarden", "Alice in Chains"], "correct": 1 },
+    { "question": "Hoeveel nummer 1 hits had de Beatles in de VS?", "answers": ["10", "15", "20", "27"], "correct": 2 }
+  ]
+}

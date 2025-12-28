@@ -1,0 +1,32 @@
+{
+  "id": "nieuwjaarsquiz-2025",
+  "title": "Nieuwjaarsquiz 2025",
+  "description": "Test je kennis over 2025!",
+  "questions": [
+    { "question": "Welke politieke partij stapte in juni 2025 uit de coalitie, waardoor kabinet-Schoof viel?", "answers": ["VVD", "PVV", "NSC", "BBB"], "correct": 1 },
+    { "question": "In welke stad was de eerste NAVO-top ooit in Nederland (juni 2025)?", "answers": ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht"], "correct": 2 },
+    { "question": "Welk nummer hoor je?", "answers": ["APT. - ROSE & Bruno Mars", "Die With A Smile - Lady Gaga & Bruno Mars", "Espresso - Sabrina Carpenter", "Birds of a Feather - Billie Eilish"], "correct": 1, "type": "music", "audioFile": "audio/01-die-with-a-smile.m4a" },
+    { "question": "Wie was in 2025 secretaris-generaal van de NAVO?", "answers": ["Jens Stoltenberg", "Mark Rutte", "Dick Schoof", "Ursula von der Leyen"], "correct": 1 },
+    { "question": "Hoeveel mensen liepen mee bij de grootste 'Rode Lijn' demonstratie (oktober 2025)?", "answers": ["50.000", "100.000", "150.000", "250.000"], "correct": 3 },
+    { "question": "Welk nummer hoor je?", "answers": ["Die With A Smile", "Ordinary - Alex Warren", "APT. - ROSE & Bruno Mars", "Echte Liefde Is Te Koop"], "correct": 2, "type": "music", "audioFile": "audio/02-apt.m4a" },
+    { "question": "Welke Nederlandse korte film won in 2025 een Oscar?", "answers": ["De Oost", "Ik Ben Geen Robot", "Babygirl", "Haantjes"], "correct": 1 },
+    { "question": "Op welke datum waren de Tweede Kamerverkiezingen in 2025?", "answers": ["15 september", "1 oktober", "29 oktober", "15 november"], "correct": 2 },
+    { "question": "Welk nummer hoor je?", "answers": ["Lunch - Billie Eilish", "Birds of a Feather - Billie Eilish", "Please Please Please - Sabrina Carpenter", "Good Luck, Babe! - Chappell Roan"], "correct": 1, "type": "music", "audioFile": "audio/03-lunch.m4a" },
+    { "question": "Welke partij werd samen met PVV de grootste (beiden 26 zetels)?", "answers": ["VVD", "GroenLinks-PvdA", "D66", "CDA"], "correct": 1 },
+    { "question": "Welk muziekspel veroverde in 2025 de huiskamers?", "answers": ["30 Seconds", "Hitster", "Stef Stuntpiloot", "SongPop"], "correct": 1 },
+    { "question": "Welk nummer hoor je?", "answers": ["Espresso - Sabrina Carpenter", "Taste - Sabrina Carpenter", "Please Please Please", "Feather - Sabrina Carpenter"], "correct": 0, "type": "music", "audioFile": "audio/04-espresso.m4a" },
+    { "question": "Welk programma won de Gouden Televizier-Ring 2025?", "answers": ["Haantjes", "Voetbal Ouders", "Vandaag Inside", "Jinek"], "correct": 2 },
+    { "question": "Hoeveel jaar bestond Amsterdam in 2025?", "answers": ["700 jaar", "725 jaar", "750 jaar", "800 jaar"], "correct": 2 },
+    { "question": "Welk nummer hoor je?", "answers": ["HOT TO GO! - Chappell Roan", "Red Wine Supernova", "Good Luck, Babe! - Chappell Roan", "Pink Pony Club"], "correct": 2, "type": "music", "audioFile": "audio/05-good-luck-babe.m4a" },
+    { "question": "Welke natuurramp trof Los Angeles begin januari 2025?", "answers": ["Aardbeving", "Orkaan", "Natuurbranden", "Overstroming"], "correct": 2 },
+    { "question": "Hoe heet de defensienorm afgesproken tijdens de NAVO-top?", "answers": ["The Amsterdam Promise", "The Hague Pledge", "The Rotterdam Accord", "The Dutch Deal"], "correct": 1 },
+    { "question": "Wie werd in 2025 topscoorder aller tijden van Oranje?", "answers": ["Robin van Persie", "Memphis Depay", "Virgil van Dijk", "Cody Gakpo"], "correct": 1 },
+    { "question": "Wat werd gestolen uit het Drents Museum in januari 2025?", "answers": ["Romeinse munten", "Vikingsieraden", "Egyptische artefacten", "Dacische goudschatten"], "correct": 3 },
+    { "question": "Welke toren stortte in maart 2025 in Valkenburg?", "answers": ["Watertoren", "Wilhelminatoren", "Kerktoren", "Uitzichttoren"], "correct": 1 },
+    { "question": "Welke Golden Earring-gitarist overleed in 2025 aan ALS?", "answers": ["Barry Hay", "George Kooymans", "Rinus Gerritsen", "Cesar Zuiderwijk"], "correct": 1 },
+    { "question": "Welke Nederlandse zanger, bekend van 'Banger Hart', overleed in maart 2025 aan Parkinson?", "answers": ["Gerard Cox", "Rob de Nijs", "Lee Towers", "Gordon"], "correct": 1 },
+    { "question": "Welke Oscar-winnende acteur van 'The French Connection' werd in 2025 dood aangetroffen in Santa Fe?", "answers": ["Robert Redford", "Gene Hackman", "Val Kilmer", "Richard Chamberlain"], "correct": 1 },
+    { "question": "Welke Nederlandse cabaretier en acteur, bekend van 't Is Weer Voorbij Die Mooie Zomer', overleed in 2025?", "answers": ["Paul de Leeuw", "Gerard Cox", "André van Duin", "Youp van 't Hek"], "correct": 1 },
+    { "question": "Welke 'Top Gun' en 'The Doors' acteur overleed op 1 april 2025?", "answers": ["Tom Cruise", "Val Kilmer", "Michael Douglas", "Kevin Bacon"], "correct": 1 }
+  ]
+}

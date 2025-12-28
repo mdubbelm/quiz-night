@@ -169,8 +169,17 @@
             <button class="btn btn-secondary" onclick="testMusicQuestion()" style="margin-top: 20px; opacity: 0.7;">🎵 Test muziekvraag</button>
         </div>
 
+        <!-- Quiz Selection -->
+        <div class="screen" id="quiz-selection">
+            <h2 style="font-size: 2rem; margin-bottom: 10px;">Kies een Quiz</h2>
+            <p style="opacity: 0.7; margin-bottom: 30px;">Selecteer de quiz die je wilt spelen</p>
+            <div id="quiz-list" style="display: flex; flex-direction: column; gap: 15px; max-width: 500px; width: 100%;"></div>
+            <button class="btn btn-secondary" onclick="showWelcome()" style="margin-top: 30px;">Terug</button>
+        </div>
+
         <!-- Host Lobby -->
         <div class="screen" id="host-lobby">
+            <h2 id="quiz-title" style="font-size: 1.5rem; margin-bottom: 20px; opacity: 0.8;"></h2>
             <div class="game-code-container">
                 <div class="game-code-label">Spelcode</div>
                 <div class="game-code" id="game-code">----</div>
@@ -320,10 +329,17 @@
             timer: null,
             timeLeft: 20,
             myScore: 0,
-            subscription: null
+            subscription: null,
+            currentQuiz: null
         };
 
-        const questions = [
+        // Beschikbare quizzen
+        const availableQuizzes = [
+            { id: 'nieuwjaarsquiz-2025', title: 'Nieuwjaarsquiz 2025', description: 'Test je kennis over 2025!', file: 'quizzes/nieuwjaarsquiz-2025.json' },
+            { id: 'popquiz-classics', title: 'Popquiz Classics', description: 'Hits uit de jaren 80, 90 en 00!', file: 'quizzes/popquiz-classics.json' }
+        ];
+
+        let questions = [
             { question: "Welke politieke partij stapte in juni 2025 uit de coalitie, waardoor kabinet-Schoof viel?", answers: ["VVD", "PVV", "NSC", "BBB"], correct: 1 },
             { question: "In welke stad was de eerste NAVO-top ooit in Nederland (juni 2025)?", answers: ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht"], correct: 2 },
             { question: "Welk nummer hoor je?", answers: ["APT. - ROSE & Bruno Mars", "Die With A Smile - Lady Gaga & Bruno Mars", "Espresso - Sabrina Carpenter", "Birds of a Feather - Billie Eilish"], correct: 1, type: "music", audioFile: "audio/01-die-with-a-smile.m4a", startTime: 60 },
@@ -400,8 +416,45 @@
         // HOST FUNCTIONS
         // ==================
 
-        async function startHost() {
+        function startHost() {
             gameState.isHost = true;
+            showQuizSelection();
+        }
+
+        function showQuizSelection() {
+            const list = document.getElementById('quiz-list');
+            list.innerHTML = '';
+
+            availableQuizzes.forEach(quiz => {
+                const btn = document.createElement('button');
+                btn.className = 'btn btn-primary';
+                btn.style.cssText = 'text-align: left; padding: 20px 25px; display: flex; flex-direction: column; align-items: flex-start;';
+                btn.innerHTML = `
+                    <span style="font-size: 1.2rem;">${quiz.title}</span>
+                    <span style="font-size: 0.9rem; opacity: 0.8; font-weight: normal;">${quiz.description}</span>
+                `;
+                btn.onclick = () => selectQuiz(quiz);
+                list.appendChild(btn);
+            });
+
+            showScreen('quiz-selection');
+        }
+
+        async function selectQuiz(quiz) {
+            try {
+                const response = await fetch(quiz.file);
+                const data = await response.json();
+                questions = data.questions;
+                gameState.currentQuiz = data;
+                console.log(`Loaded quiz: ${data.title} with ${questions.length} questions`);
+                await createGameSession();
+            } catch (error) {
+                console.error('Error loading quiz:', error);
+                alert('Kon quiz niet laden: ' + error.message);
+            }
+        }
+
+        async function createGameSession() {
             gameState.gameCode = generateGameCode();
 
             // Create session in database
@@ -418,6 +471,7 @@
             }
 
             gameState.sessionId = data.id;
+            document.getElementById('quiz-title').textContent = gameState.currentQuiz?.title || 'Quiz';
             document.getElementById('game-code').textContent = gameState.gameCode;
 
             // Generate QR code
