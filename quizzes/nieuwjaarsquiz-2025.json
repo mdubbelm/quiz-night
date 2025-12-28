@@ -8,25 +8,25 @@
 
     { "question": "In welke stad was de eerste NAVO-top ooit in Nederland (juni 2025)?", "answers": ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht"], "correct": 2, "category": "politiek" },
 
-    { "question": "Welk nummer hoor je?", "answers": ["APT. - ROSE & Bruno Mars", "Die With A Smile - Lady Gaga & Bruno Mars", "Espresso - Sabrina Carpenter", "Birds of a Feather - Billie Eilish"], "correct": 1, "type": "music", "audioFile": "audio/01-die-with-a-smile.m4a", "category": "muziek" },
+    { "question": "Lady Gaga en Bruno Mars scoorden samen een megahit in 2024. Welk nummer hoor je?", "answers": ["Shallow", "Die With A Smile", "Just Dance", "Uptown Funk"], "correct": 1, "type": "music", "audioFile": "audio/01-die-with-a-smile.m4a", "category": "muziek" },
 
     { "question": "Wie was in 2025 secretaris-generaal van de NAVO?", "answers": ["Jens Stoltenberg", "Mark Rutte", "Dick Schoof", "Ursula von der Leyen"], "correct": 1, "category": "politiek" },
 
-    { "question": "Welk nummer hoor je?", "answers": ["Die With A Smile", "Ordinary - Alex Warren", "APT. - ROSE & Bruno Mars", "Echte Liefde Is Te Koop"], "correct": 2, "type": "music", "audioFile": "audio/02-apt.m4a", "category": "muziek" },
+    { "question": "BLACKPINK-zangeres ROSÉ scoorde met Bruno Mars een wereldwijde hit. Hoe heet dit nummer?", "answers": ["Pink Venom", "APT.", "On The Ground", "Gone"], "correct": 1, "type": "music", "audioFile": "audio/02-apt.m4a", "category": "muziek" },
 
     { "question": "Welke Nederlandse korte film won in 2025 een Oscar?", "answers": ["De Oost", "Ik Ben Geen Robot", "Babygirl", "Haantjes"], "correct": 1, "category": "entertainment" },
 
-    { "question": "Welk nummer hoor je?", "answers": ["Lunch - Billie Eilish", "Birds of a Feather - Billie Eilish", "Please Please Please - Sabrina Carpenter", "Good Luck, Babe! - Chappell Roan"], "correct": 1, "type": "music", "audioFile": "audio/03-lunch.m4a", "category": "muziek" },
+    { "question": "Van welke artiest hoor je dit nummer? Ze won meerdere Grammy's en is bekend om haar groene haar.", "answers": ["Dua Lipa", "Billie Eilish", "Olivia Rodrigo", "Doja Cat"], "correct": 1, "type": "music", "audioFile": "audio/03-lunch.m4a", "category": "muziek" },
 
     { "question": "Welk muziekspel veroverde in 2025 de huiskamers?", "answers": ["30 Seconds", "Hitster", "Stef Stuntpiloot", "SongPop"], "correct": 1, "category": "entertainment" },
 
-    { "question": "Welk nummer hoor je?", "answers": ["Espresso - Sabrina Carpenter", "Taste - Sabrina Carpenter", "Please Please Please", "Feather - Sabrina Carpenter"], "correct": 0, "type": "music", "audioFile": "audio/04-espresso.m4a", "category": "muziek" },
+    { "question": "Dit nummer van Sabrina Carpenter ging viraal en werd de zomerhit van 2024. Hoe heet het?", "answers": ["Espresso", "Taste", "Please Please Please", "Feather"], "correct": 0, "type": "music", "audioFile": "audio/04-espresso.m4a", "category": "muziek" },
 
     { "question": "Welk programma won de Gouden Televizier-Ring 2025?", "answers": ["Haantjes", "Voetbal Ouders", "Vandaag Inside", "Jinek"], "correct": 2, "category": "entertainment" },
 
     { "question": "Hoeveel jaar bestond Amsterdam in 2025?", "answers": ["700 jaar", "725 jaar", "750 jaar", "800 jaar"], "correct": 2, "category": "nederland" },
 
-    { "question": "Welk nummer hoor je?", "answers": ["HOT TO GO! - Chappell Roan", "Red Wine Supernova", "Good Luck, Babe! - Chappell Roan", "Pink Pony Club"], "correct": 2, "type": "music", "audioFile": "audio/05-good-luck-babe.m4a", "category": "muziek" },
+    { "question": "Chappell Roan brak door als nieuwe ster in 2024. Welke hit van haar hoor je?", "answers": ["HOT TO GO!", "Red Wine Supernova", "Good Luck, Babe!", "Pink Pony Club"], "correct": 2, "type": "music", "audioFile": "audio/05-good-luck-babe.m4a", "category": "muziek" },
 
     { "question": "Welke natuurramp trof Los Angeles begin januari 2025?", "answers": ["Aardbeving", "Orkaan", "Natuurbranden", "Overstroming"], "correct": 2, "category": "wereld" },
 
@@ -148,22 +148,22 @@
 
     { "question": "Welke Britse rockband kondigde een reünie aan in 2025?", "answers": ["The Smiths", "Oasis", "Pink Floyd", "Led Zeppelin"], "correct": 1, "category": "muziek" },
 
-    { "question": "Welk nummer hoor je?", "answers": ["Europapa - Joost Klein", "C'est la vie - Claude", "Wasted Love - JJ", "Zoutelande - BLØF"], "correct": 1, "type": "music", "audioFile": "audio/06-cest-la-vie.m4a", "category": "muziek" },
+    { "question": "Dit nummer was de Nederlandse inzending voor Eurovision 2025 en haalde #1 in de Top 40. Hoe heet het?", "answers": ["Europapa", "C'est la vie", "Arcade", "Calm After The Storm"], "correct": 1, "type": "music", "audioFile": "audio/06-cest-la-vie.m4a", "category": "muziek" },
 
-    { "question": "Welk nummer hoor je?", "answers": ["C'est la vie - Claude", "Wasted Love - JJ", "Rise Like a Phoenix - Conchita", "Euphoria - Loreen"], "correct": 1, "type": "music", "audioFile": "audio/07-wasted-love.m4a", "category": "muziek" },
+    { "question": "Met dit nummer won Oostenrijk het Eurovisie Songfestival 2025. Hoe heet het?", "answers": ["Euphoria", "Wasted Love", "Rise Like a Phoenix", "Arcade"], "correct": 1, "type": "music", "audioFile": "audio/07-wasted-love.m4a", "category": "muziek" },
 
-    { "question": "Welk nummer hoor je?", "answers": ["Anti-Hero - Taylor Swift", "Cruel Summer - Taylor Swift", "The Fate of Ophelia - Taylor Swift", "Shake It Off - Taylor Swift"], "correct": 2, "type": "music", "audioFile": "audio/08-fate-of-ophelia.m4a", "category": "muziek" },
+    { "question": "Taylor Swift bracht in oktober 2025 een nieuw album uit. Hoe heet de eerste single die je hier hoort?", "answers": ["Anti-Hero", "Cruel Summer", "The Fate of Ophelia", "Fortnight"], "correct": 2, "type": "music", "audioFile": "audio/08-fate-of-ophelia.m4a", "category": "muziek" },
 
-    { "question": "Welk nummer hoor je?", "answers": ["Don't Look Back in Anger - Oasis", "Wonderwall - Oasis", "Champagne Supernova - Oasis", "Live Forever - Oasis"], "correct": 1, "type": "music", "audioFile": "audio/09-wonderwall.m4a", "category": "muziek" },
+    { "question": "Deze Britse band deed in juli 2025 een historische reünietour na 16 jaar uit elkaar. Hoe heet de band?", "answers": ["Blur", "Oasis", "The Verve", "Pulp"], "correct": 1, "type": "music", "audioFile": "audio/09-wonderwall.m4a", "category": "muziek" },
 
-    { "question": "Welke Beach Boys-oprichter overleed in juni 2025?", "answers": ["Mike Love", "Al Jardine", "Brian Wilson", "Dennis Wilson"], "correct": 2, "category": "muziek", "resultAudio": "audio/result-good-vibrations.m4a", "resultText": "Good Vibrations - The Beach Boys" },
+    { "question": "Het creatieve genie achter 'Good Vibrations' en 'Pet Sounds' overleed in juni 2025. Wie was hij?", "answers": ["Mike Love", "Al Jardine", "Brian Wilson", "Dennis Wilson"], "correct": 2, "category": "muziek", "resultAudio": "audio/result-good-vibrations.m4a", "resultText": "Good Vibrations - The Beach Boys" },
 
-    { "question": "Welke Nederlandse zanger van ''t Is weer voorbij die mooie zomer' overleed in september 2025?", "answers": ["Rob de Nijs", "Gerard Cox", "Boudewijn de Groot", "Ramses Shaffy"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-mooie-zomer.m4a", "resultText": "'t Is weer voorbij die mooie zomer - Gerard Cox" },
+    { "question": "Deze Nederlandse cabaretier en zanger bracht ons 't Is weer voorbij die mooie zomer'. Hij overleed in september 2025. Wie?", "answers": ["Rob de Nijs", "Gerard Cox", "Boudewijn de Groot", "Wim Sonneveld"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-mooie-zomer.m4a", "resultText": "'t Is weer voorbij die mooie zomer - Gerard Cox" },
 
-    { "question": "Welke reggae-legende, bekend van 'Reggae Night', overleed in november 2025?", "answers": ["Bob Marley", "Peter Tosh", "Jimmy Cliff", "Toots Hibbert"], "correct": 2, "category": "muziek", "resultAudio": "audio/result-reggae-night.m4a", "resultText": "Reggae Night - Jimmy Cliff" },
+    { "question": "Hij speelde in de filmklassieker 'The Harder They Come' en scoorde hits als 'Reggae Night'. Wie overleed in november 2025?", "answers": ["Bob Marley", "Peter Tosh", "Jimmy Cliff", "Toots Hibbert"], "correct": 2, "category": "muziek", "resultAudio": "audio/result-reggae-night.m4a", "resultText": "Reggae Night - Jimmy Cliff" },
 
-    { "question": "Welke Black Sabbath-zanger overleed in juli 2025?", "answers": ["Ronnie James Dio", "Ozzy Osbourne", "Tony Martin", "Ian Gillan"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-crazy-train.m4a", "resultText": "Crazy Train - Ozzy Osbourne" },
+    { "question": "De 'Prince of Darkness', frontman van Black Sabbath en soloartiest met 'Crazy Train', overleed in juli 2025. Wie?", "answers": ["Ronnie James Dio", "Ozzy Osbourne", "Alice Cooper", "Rob Halford"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-crazy-train.m4a", "resultText": "Crazy Train - Ozzy Osbourne" },
 
-    { "question": "Welke helft van het legendarische soulduo Sam & Dave overleed in januari 2025?", "answers": ["Dave Prater", "Sam Moore", "Beide", "Geen van beiden"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-soul-man.m4a", "resultText": "Soul Man - Sam & Dave" }
+    { "question": "'Soul Man' en 'Hold On, I'm Comin'' waren hits van dit legendarische duo. Welke helft overleed in januari 2025?", "answers": ["Dave Prater", "Sam Moore", "Beide", "Geen van beiden"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-soul-man.m4a", "resultText": "Soul Man - Sam & Dave" }
   ]
 }
