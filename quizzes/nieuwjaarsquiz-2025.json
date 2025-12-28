@@ -76,7 +76,7 @@
 
     { "question": "Welke AI-tool werd in 2025 het meest gebruikt door scholieren?", "answers": ["ChatGPT", "Claude", "Gemini", "Copilot"], "correct": 0, "category": "tieners" },
 
-    { "question": "Wat was de gemiddelde temperatuur in Nederland in de zomer van 2025?", "answers": ["Koudste ooit", "Normaal", "Warmste ooit", "Op één na warmste"], "correct": 2, "category": "nederland" },
+    { "question": "Hoe warm was de zomer van 2025 in Nederland volgens het KNMI?", "answers": ["Koudste ooit", "Normaal", "Warmste ooit", "Op drie na warmste"], "correct": 3, "category": "nederland" },
 
     { "question": "Welke emoji werd het meest gebruikt in 2025?", "answers": ["😂", "❤️", "🥹", "💀"], "correct": 2, "category": "fun" },
 
