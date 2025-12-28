@@ -405,7 +405,7 @@
                     <div class="music-badge"><span>♪</span> Muziekvraag</div>
                     <div class="video-container" style="position: relative;">
                         <div class="video-overlay" id="video-overlay"></div>
-                        <iframe src="https://www.youtube-nocookie.com/embed/${q.videoId}?autoplay=1&start=${q.startTime}&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube-nocookie.com/embed/${q.videoId}?autoplay=1&mute=0&start=${q.startTime}&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&playsinline=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
                     </div>`;
                 // Verberg overlay na 3 seconden (na eventuele reclame)
                 setTimeout(() => {
@@ -446,16 +446,12 @@
             gameState.timeLeft = seconds;
             updateTimerDisplay();
 
-            // Start achtergrondmuziek
-            startBackgroundMusic();
-
             gameState.timer = setInterval(() => {
                 gameState.timeLeft--;
                 updateTimerDisplay();
                 if (gameState.timeLeft <= 0) {
                     clearInterval(gameState.timer);
                     gameState.timer = null;
-                    stopBackgroundMusic();
                     timeUp();
                 }
             }, 1000);
@@ -712,28 +708,46 @@
         }
 
         function subscribeToGame() {
+            // Realtime subscription
             db
                 .channel('game-' + gameState.sessionId)
                 .on('postgres_changes',
                     { event: 'UPDATE', schema: 'public', table: 'game_sessions', filter: `id=eq.${gameState.sessionId}` },
-                    async (payload) => {
-                        console.log('Game update:', payload.new);
-                        const session = payload.new;
-
-                        if (session.status === 'playing') {
-                            // Altijd naar vraagscherm bij status 'playing'
-                            gameState.currentQuestion = session.current_question;
-                            const q = questions[gameState.currentQuestion];
-                            document.getElementById('player-question-hint').textContent = q.type === 'music' ? '♪ Luister en kies!' : 'Kies je antwoord!';
-                            document.getElementById('audio-viz').style.display = q.type === 'music' ? 'flex' : 'none';
-                            enableAnswerButtons();
-                            showScreen('player-question');
-                        } else if (session.status === 'finished') {
-                            await showPlayerFinalScore();
-                        }
-                    }
+                    (payload) => handleGameUpdate(payload.new)
                 )
                 .subscribe();
+
+            // Polling fallback (elke 2 seconden) voor als realtime niet werkt
+            gameState.pollInterval = setInterval(async () => {
+                const { data } = await db
+                    .from('game_sessions')
+                    .select('status, current_question')
+                    .eq('id', gameState.sessionId)
+                    .single();
+                if (data) handleGameUpdate(data);
+            }, 2000);
+        }
+
+        async function handleGameUpdate(session) {
+            const currentScreen = document.querySelector('.screen.active')?.id;
+            const isNewQuestion = session.current_question !== gameState.currentQuestion;
+
+            if (session.status === 'playing') {
+                // Ga naar vraagscherm als vraag is veranderd OF we niet al op player-question zitten
+                if (isNewQuestion || currentScreen !== 'player-question') {
+                    gameState.currentQuestion = session.current_question;
+                    const q = questions[gameState.currentQuestion];
+                    if (q) {
+                        document.getElementById('player-question-hint').textContent = q.type === 'music' ? '♪ Luister en kies!' : 'Kies je antwoord!';
+                        document.getElementById('audio-viz').style.display = q.type === 'music' ? 'flex' : 'none';
+                        enableAnswerButtons();
+                        showScreen('player-question');
+                    }
+                }
+            } else if (session.status === 'finished') {
+                if (gameState.pollInterval) clearInterval(gameState.pollInterval);
+                await showPlayerFinalScore();
+            }
         }
 
         async function submitAnswer(idx) {
