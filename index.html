@@ -917,16 +917,24 @@
                 btn.disabled = true;
             });
 
-            // Save answer
-            await db
+            // Save answer with error handling
+            const { error } = await db
                 .from('answers')
                 .upsert({
                     session_id: gameState.sessionId,
                     player_id: gameState.playerId,
                     question_index: gameState.currentQuestion,
                     answer: idx,
-                    time_left: 15 // Simplified - in production you'd track actual time
-                });
+                    time_left: 15
+                }, { onConflict: 'session_id,player_id,question_index' });
+
+            if (error) {
+                console.error('Fout bij opslaan antwoord:', error);
+                alert('Kon antwoord niet opslaan: ' + error.message);
+                // Re-enable buttons so user can try again
+                document.querySelectorAll('.player-answer-btn').forEach(btn => btn.disabled = false);
+                return;
+            }
 
             showScreen('player-answered');
 
