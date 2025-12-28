@@ -211,7 +211,7 @@
                 <div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div>
                 <div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div>
             </div>
-            <p style="font-size: 1.3rem; opacity: 0.7; margin-bottom: 30px;">Speel de muziek af op je laptop...</p>
+            <div id="music-player-container" style="margin-bottom: 20px;"></div>
             <div id="music-info" style="background: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 15px; margin-bottom: 30px;"></div>
             <button class="btn btn-primary" onclick="showMusicQuestion()">Toon de vraag!</button>
         </div>
@@ -319,19 +319,19 @@
         const questions = [
             { question: "Welke politieke partij stapte in juni 2025 uit de coalitie, waardoor kabinet-Schoof viel?", answers: ["VVD", "PVV", "NSC", "BBB"], correct: 1 },
             { question: "In welke stad was de eerste NAVO-top ooit in Nederland (juni 2025)?", answers: ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht"], correct: 2 },
-            { question: "Welk nummer hoor je?", answers: ["APT. - ROSE & Bruno Mars", "Die With A Smile - Lady Gaga & Bruno Mars", "Espresso - Sabrina Carpenter", "Birds of a Feather - Billie Eilish"], correct: 1, type: "music", startTime: 60 },
+            { question: "Welk nummer hoor je?", answers: ["APT. - ROSE & Bruno Mars", "Die With A Smile - Lady Gaga & Bruno Mars", "Espresso - Sabrina Carpenter", "Birds of a Feather - Billie Eilish"], correct: 1, type: "music", audioFile: "audio/01-die-with-a-smile.m4a", startTime: 60 },
             { question: "Wie was in 2025 secretaris-generaal van de NAVO?", answers: ["Jens Stoltenberg", "Mark Rutte", "Dick Schoof", "Ursula von der Leyen"], correct: 1 },
             { question: "Hoeveel mensen liepen mee bij de grootste 'Rode Lijn' demonstratie (oktober 2025)?", answers: ["50.000", "100.000", "150.000", "250.000"], correct: 3 },
-            { question: "Welk nummer hoor je?", answers: ["Die With A Smile", "Ordinary - Alex Warren", "APT. - ROSE & Bruno Mars", "Echte Liefde Is Te Koop"], correct: 2, type: "music", startTime: 45 },
+            { question: "Welk nummer hoor je?", answers: ["Die With A Smile", "Ordinary - Alex Warren", "APT. - ROSE & Bruno Mars", "Echte Liefde Is Te Koop"], correct: 2, type: "music", audioFile: "audio/02-apt.m4a", startTime: 45 },
             { question: "Welke Nederlandse korte film won in 2025 een Oscar?", answers: ["De Oost", "Ik Ben Geen Robot", "Babygirl", "Haantjes"], correct: 1 },
             { question: "Op welke datum waren de Tweede Kamerverkiezingen in 2025?", answers: ["15 september", "1 oktober", "29 oktober", "15 november"], correct: 2 },
-            { question: "Welk nummer hoor je?", answers: ["Lunch - Billie Eilish", "Birds of a Feather - Billie Eilish", "Please Please Please - Sabrina Carpenter", "Good Luck, Babe! - Chappell Roan"], correct: 1, type: "music", startTime: 30 },
+            { question: "Welk nummer hoor je?", answers: ["Lunch - Billie Eilish", "Birds of a Feather - Billie Eilish", "Please Please Please - Sabrina Carpenter", "Good Luck, Babe! - Chappell Roan"], correct: 1, type: "music", audioFile: "audio/03-lunch.m4a", startTime: 30 },
             { question: "Welke partij werd samen met PVV de grootste (beiden 26 zetels)?", answers: ["VVD", "GroenLinks-PvdA", "D66", "CDA"], correct: 1 },
             { question: "Welk muziekspel veroverde in 2025 de huiskamers?", answers: ["30 Seconds", "Hitster", "Stef Stuntpiloot", "SongPop"], correct: 1 },
-            { question: "Welk nummer hoor je?", answers: ["Espresso - Sabrina Carpenter", "Taste - Sabrina Carpenter", "Please Please Please", "Feather - Sabrina Carpenter"], correct: 0, type: "music", startTime: 55 },
+            { question: "Welk nummer hoor je?", answers: ["Espresso - Sabrina Carpenter", "Taste - Sabrina Carpenter", "Please Please Please", "Feather - Sabrina Carpenter"], correct: 0, type: "music", audioFile: "audio/04-espresso.m4a", startTime: 55 },
             { question: "Welk programma won de Gouden Televizier-Ring 2025?", answers: ["Haantjes", "Voetbal Ouders", "Vandaag Inside", "Jinek"], correct: 2 },
             { question: "Hoeveel jaar bestond Amsterdam in 2025?", answers: ["700 jaar", "725 jaar", "750 jaar", "800 jaar"], correct: 2 },
-            { question: "Welk nummer hoor je?", answers: ["HOT TO GO! - Chappell Roan", "Red Wine Supernova", "Good Luck, Babe! - Chappell Roan", "Pink Pony Club"], correct: 2, type: "music", startTime: 50 },
+            { question: "Welk nummer hoor je?", answers: ["HOT TO GO! - Chappell Roan", "Red Wine Supernova", "Good Luck, Babe! - Chappell Roan", "Pink Pony Club"], correct: 2, type: "music", audioFile: "audio/05-good-luck-babe.m4a", startTime: 50 },
             { question: "Welke natuurramp trof Los Angeles begin januari 2025?", answers: ["Aardbeving", "Orkaan", "Natuurbranden", "Overstroming"], correct: 2 },
             { question: "Hoe heet de defensienorm afgesproken tijdens de NAVO-top?", answers: ["The Amsterdam Promise", "The Hague Pledge", "The Rotterdam Accord", "The Dutch Deal"], correct: 1 },
             { question: "Wie werd in 2025 topscoorder aller tijden van Oranje?", answers: ["Robin van Persie", "Memphis Depay", "Virgil van Dijk", "Cody Gakpo"], correct: 1 },
@@ -472,14 +472,28 @@
                 const appleMusicUrl = `https://music.apple.com/nl/search?term=${encodeURIComponent(songName)}`;
                 const spotifyUrl = `https://open.spotify.com/search/${encodeURIComponent(songName)}`;
 
+                // Audio player voor lokale bestanden
+                const playerContainer = document.getElementById('music-player-container');
+                if (q.audioFile) {
+                    playerContainer.innerHTML = `
+                        <audio id="music-audio" controls style="width: 100%; max-width: 400px;">
+                            <source src="${q.audioFile}" type="audio/mp4">
+                            Audio niet ondersteund
+                        </audio>
+                        <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 5px;">Klik play om het fragment af te spelen</p>
+                    `;
+                } else {
+                    playerContainer.innerHTML = `<p style="color: var(--orange);">⚠️ Geen audiobestand gevonden - gebruik Apple Music/Spotify</p>`;
+                }
+
                 const musicInfo = document.getElementById('music-info');
                 musicInfo.innerHTML = `
-                    <p style="font-size: 0.9rem; opacity: 0.6; margin-bottom: 10px;">Speel dit nummer af:</p>
-                    <p style="font-size: 1.4rem; font-weight: 700; margin-bottom: 15px;">${songName}</p>
+                    <p style="font-size: 0.9rem; opacity: 0.6; margin-bottom: 10px;">${q.audioFile ? 'Of zoek handmatig:' : 'Speel dit nummer af:'}</p>
+                    <p style="font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">${songName}</p>
                     <p style="font-size: 0.9rem; opacity: 0.6; margin-bottom: 15px;">Start vanaf ${q.startTime || 0} seconden</p>
                     <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                        <a href="${appleMusicUrl}" target="_blank" class="btn btn-secondary" style="padding: 12px 20px; text-decoration: none;">🍎 Apple Music</a>
-                        <a href="${spotifyUrl}" target="_blank" class="btn btn-secondary" style="padding: 12px 20px; text-decoration: none;">🎵 Spotify</a>
+                        <a href="${appleMusicUrl}" target="_blank" class="btn btn-secondary" style="padding: 10px 15px; text-decoration: none; font-size: 0.9rem;">🍎 Apple Music</a>
+                        <a href="${spotifyUrl}" target="_blank" class="btn btn-secondary" style="padding: 10px 15px; text-decoration: none; font-size: 0.9rem;">🎵 Spotify</a>
                     </div>
                 `;
 
