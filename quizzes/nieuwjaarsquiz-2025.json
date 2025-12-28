@@ -56,7 +56,7 @@
 
     { "question": "Welke 'Top Gun' acteur overleed op 1 april 2025?", "answers": ["Tom Cruise", "Val Kilmer", "Michael Douglas", "Kevin Bacon"], "correct": 1, "category": "entertainment" },
 
-    { "question": "Hoeveel gram weegt een standaard Tony Chocolonely reep?", "answers": ["100 gram", "150 gram", "180 gram", "200 gram"], "correct": 2, "category": "fun" },
+    { "question": "Welke Franse filmster en zangeres, sekssymbool van de jaren 60, overleed in december 2025?", "answers": ["Catherine Deneuve", "Brigitte Bardot", "Jeanne Moreau", "Françoise Hardy"], "correct": 1, "category": "entertainment", "resultAudio": "audio/result-harley-davidson.m4a", "resultText": "Harley Davidson - Brigitte Bardot" },
 
     { "question": "Welke Nederlandse stad kreeg in 2025 een eigen versie van Monopoly?", "answers": ["Rotterdam", "Utrecht", "Eindhoven", "Groningen"], "correct": 2, "category": "fun" },
 
@@ -82,9 +82,7 @@
 
     { "question": "Welk merk bracht de duurste sneakers van 2025 uit?", "answers": ["Nike", "Adidas", "Louis Vuitton", "Balenciaga"], "correct": 2, "category": "tieners" },
 
-    { "question": "In welk jaar is de Euro ingevoerd in Nederland?", "answers": ["1999", "2000", "2001", "2002"], "correct": 3, "category": "nostalgie" },
-
-    { "question": "Welke klassieke Nederlandse film werd opnieuw uitgebracht in 4K?", "answers": ["Turks Fruit", "Flodder", "Soldaat van Oranje", "De Lift"], "correct": 2, "category": "nostalgie" },
+    { "question": "Welke klassieke Nederlandse film werd in 2025 opnieuw uitgebracht in 4K?", "answers": ["Turks Fruit", "Flodder", "Soldaat van Oranje", "De Lift"], "correct": 2, "category": "entertainment" },
 
     { "question": "Wat werd gestolen uit het Drents Museum in januari 2025?", "answers": ["Romeinse munten", "Vikingsieraden", "Egyptische artefacten", "Dacische goudschatten"], "correct": 3, "category": "nederland" }
   ]
